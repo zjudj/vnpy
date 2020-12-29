@@ -73,7 +73,7 @@ def run_child():
     main_engine.connect(ctp_setting, "CTP")
     main_engine.write_log("连接CTP接口")
 
-    sleep(3)
+    sleep(10)
 
     st_engine.start()
     main_engine.write_log("Arb引擎启动")
