@@ -22,6 +22,8 @@ SETTINGS["log.console"] = True
 
 if argv[1] == 'test':
     ctp_setting_path = f'{sys.path[-1]}\\.vntrader\\connect_ctp_test.json'
+elif argv[1] == 'sim':
+    ctp_setting_path = f'{sys.path[-1]}\\.vntrader\\connect_ctp_sim.json'
 elif argv[1] == 'pro':
     ctp_setting_path = f'{sys.path[-1]}\\.vntrader\\connect_ctp_pro.json'
 else:
