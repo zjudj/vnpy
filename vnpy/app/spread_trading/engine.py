@@ -362,6 +362,7 @@ class SpreadAlgoEngine:
 
     def stop(self):
         """"""
+        self.write_log("算法通过这里1")
         for algo in self.algos.values():
             self.stop_algo(algo)
 
@@ -491,7 +492,7 @@ class SpreadAlgoEngine:
         if not algo:
             self.write_log("停止价差算法失败，找不到算法：{}".format(algoid))
             return
-
+        self.write_log('算法通过这里2')
         algo.stop()
 
     def put_algo_event(self, algo: SpreadAlgoTemplate) -> None:
